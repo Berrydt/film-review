@@ -1,6 +1,9 @@
 package com.giantplay.filmreview;
 
+<<<<<<< HEAD
+=======
 import android.content.Context;
+>>>>>>> c4e0ee7206e226371a17ed2b3b75ec8eb92dba05
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -16,8 +19,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.AdapterView;
 import android.widget.GridView;
+<<<<<<< HEAD
+=======
 import android.widget.Toast;
 import android.widget.EditText;
+>>>>>>> c4e0ee7206e226371a17ed2b3b75ec8eb92dba05
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -65,6 +71,11 @@ public class MainActivity extends AppCompatActivity
                 intent.putExtra("movie_title", parent.getContext().getString(movie.getName()));
                 intent.putExtra("movie_year", parent.getContext().getString(movie.getYear()));
                 intent.putExtra("movie_desc", parent.getContext().getString(movie.getDesc()));
+<<<<<<< HEAD
+                intent.putExtra("movie_rating", movie.getRating());
+                intent.putExtra("movie_reviewer", movie.getReviewer());
+=======
+>>>>>>> c4e0ee7206e226371a17ed2b3b75ec8eb92dba05
                 intent.putExtra("movie_image", movie.getImageResource());
                 startActivity(intent);
 
@@ -131,6 +142,18 @@ public class MainActivity extends AppCompatActivity
     }
 
     private Movie[] movies = {
+<<<<<<< HEAD
+        new Movie(R.string.aquaman, R.string.y_2018, R.drawable.aquaman, R.string.d_aquaman, 4.2f, 553),
+        new Movie(R.string.bumblebee, R.string.y_2018, R.drawable.bumblebee, R.string.d_bumblebee, 3.5f, 2471),
+        new Movie(R.string.hereditary, R.string.y_2018, R.drawable.hereditary, R.string.d_hereditary, 4.0f, 3427),
+        new Movie(R.string.black_panther, R.string.y_2018, R.drawable.blackpanther, R.string.d_black_panther,4.5f, 2366),
+        new Movie(R.string.frozen, R.string.y_2013, R.drawable.frozen, R.string.d_frozen,4.5f, 3359),
+        new Movie(R.string.coco, R.string.y_2017, R.drawable.coco, R.string.d_coco,4.5f, 2417),
+        new Movie(R.string.pengabdi_setan, R.string.y_2018, R.drawable.pengabdisetan, R.string.d_pengabdi,4.5f, 2444),
+        new Movie(R.string.marry_poppins, R.string.y_2018, R.drawable.marypoppins, R.string.d_marry,4.5f, 3451),
+        new Movie(R.string.a_quiet_place, R.string.y_2018, R.drawable.quietplace, R.string.d_quiet,4.5f, 1776),
+        new Movie(R.string.dilan, R.string.y_2018, R.drawable.dilan1990, R.string.d_dilan,4.5f, 2226)
+=======
         new Movie(R.string.aquaman, R.string.y_2018, R.drawable.aquaman, R.string.d_aquaman),
         new Movie(R.string.bumblebee, R.string.y_2018, R.drawable.bumblebee, R.string.d_bumblebee),
         new Movie(R.string.hereditary, R.string.y_2018, R.drawable.hereditary, R.string.d_hereditary),
@@ -141,5 +164,6 @@ public class MainActivity extends AppCompatActivity
         new Movie(R.string.marry_poppins, R.string.y_2018, R.drawable.marypoppins, R.string.d_marry),
         new Movie(R.string.a_quiet_place, R.string.y_2018, R.drawable.quietplace, R.string.d_quiet),
         new Movie(R.string.dilan, R.string.y_2018, R.drawable.dilan1990, R.string.d_dilan)
+>>>>>>> c4e0ee7206e226371a17ed2b3b75ec8eb92dba05
     };
 }
